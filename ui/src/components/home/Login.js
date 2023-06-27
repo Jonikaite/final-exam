@@ -80,7 +80,7 @@ export function Login() {
                             name='username'
                             icon='user'
                             iconPosition='left'
-                            placeholder='Username'
+                            placeholder='Vartotojo vardas'
                             onChange={handleInputChange}
                         />
                         <Form.Input
@@ -88,17 +88,17 @@ export function Login() {
                             name='password'
                             icon='lock'
                             iconPosition='left'
-                            placeholder='Password'
+                            placeholder='Slaptažodis'
                             type='password'
                             onChange={handleInputChange}
                         />
-                        <Button color='violet' fluid size='large'>Login</Button>
+                        <Button color='violet' fluid size='large'>Prisijungti</Button>
                     </Segment>
                 </Form>
-                <Message>{`Don't have already an account? `}
-                    <a href='/signup' color='violet' as={NavLink} to="/signup">Sign Up</a>
+                <Message>{`Dar neturite paskyros? `}
+                    <a href='/signup' color='violet' as={NavLink} to="/signup">Užsiregistruokite</a>
                 </Message>
-                {isError && <Message negative>The username or password provided are incorrect!</Message>}
+                {isError && <Message negative>Vartotojo vardas arba slaptažodis neteisingi</Message>}
             </Grid.Column>
         </Grid>
     );

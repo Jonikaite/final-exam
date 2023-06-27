@@ -34,18 +34,17 @@ export function Navbar() {
   }
 
   return (
-    <Menu inverted color='violet' stackable size='massive' style={{borderRadius: 0}}>
+    <Menu inverted color='black' stackable size='massive' style={{borderRadius: 0}}>
       <Container>
-        <Menu.Item header>Task-UI</Menu.Item>
-        <Menu.Item as={Link} exact='true' to="/">Home</Menu.Item>
+        <Menu.Item as={Link} exact='true' to="/">Pagrindins</Menu.Item>
 
-        <Menu.Item as={Link} to="/adminpage" style={adminPageStyle()}>AdminPage</Menu.Item>
+        <Menu.Item as={Link} to="/adminpage" style={adminPageStyle()}>Administratoriaus puslapis</Menu.Item>
         <Menu.Item as={Link} to="/userpage" style={userPageStyle()}>UserPage</Menu.Item>
         <Menu.Menu position='right'>
-          <Menu.Item as={Link} to="/login" style={enterMenuStyle()}>Login</Menu.Item>
-          <Menu.Item as={Link} to="/signup" style={enterMenuStyle()}>Sign Up</Menu.Item>
-          <Menu.Item header style={logoutMenuStyle()}>{`Hi ${getUserName()}`}</Menu.Item>
-          <Menu.Item as={Link} to="/" style={logoutMenuStyle()} onClick={logout}>Logout</Menu.Item>
+          <Menu.Item as={Link} to="/login" style={enterMenuStyle()}>Prisijungti</Menu.Item>
+          <Menu.Item as={Link} to="/signup" style={enterMenuStyle()}>Užsiregistruoti</Menu.Item>
+          <Menu.Item header style={logoutMenuStyle()}>{`Sveiki, ${getUserName()}`}</Menu.Item>
+          <Menu.Item as={Link} to="/" style={logoutMenuStyle()} onClick={logout}>Atsijungti</Menu.Item>
         </Menu.Menu>
       </Container>
     </Menu>

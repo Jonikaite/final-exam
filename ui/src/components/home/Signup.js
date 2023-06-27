@@ -101,7 +101,7 @@ export function Signup() {
                                 name='username'
                                 icon='user'
                                 iconPosition='left'
-                                placeholder='Username'
+                                placeholder='Vartotojo slapyvardis'
                                 onChange={handleInputChange}
                             />
                             <Form.Input
@@ -109,7 +109,7 @@ export function Signup() {
                                 name='password'
                                 icon='lock'
                                 iconPosition='left'
-                                placeholder='Password'
+                                placeholder='Slaptažodis'
                                 type='password'
                                 onChange={handleInputChange}
                             />
@@ -118,7 +118,7 @@ export function Signup() {
                                 name='name'
                                 icon='address card'
                                 iconPosition='left'
-                                placeholder='Name'
+                                placeholder='Vartotojo vardas'
                                 onChange={handleInputChange}
                             />
                             <Form.Input
@@ -126,14 +126,14 @@ export function Signup() {
                                 name='email'
                                 icon='at'
                                 iconPosition='left'
-                                placeholder='Email'
+                                placeholder='El. pašto adresas'
                                 onChange={handleInputChange}
                             />
                             <Button color='violet' fluid size='large'>Signup</Button>
                         </Segment>
                     </Form>
-                    <Message>{`Already have an account? `}
-                        <a href='/login' color='violet' as={NavLink} to="/login">Login</a>
+                    <Message>{`Jau turite paskyrą? `}
+                        <a href='/login' color='violet' as={NavLink} to="/login">Prisijungti</a>
                     </Message>
                     {isError && <Message negative>{errorMessage}</Message>}
                 </Grid.Column>
