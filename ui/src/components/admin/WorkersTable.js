@@ -29,11 +29,11 @@ export function WorkersTable() {
       <Container fluid>
         <Grid columns={2}>
           <Grid.Column>
-            <h3>Workers</h3>
+            <h3>Meistrai</h3>
           </Grid.Column>
           <Grid.Column textAlign="right">
             <Link to="/workers/create">
-              <Button primary>Add new worker</Button>
+              <Button primary>Pridėti naują darbuotoją</Button>
             </Link>
           </Grid.Column>
         </Grid>
@@ -41,12 +41,11 @@ export function WorkersTable() {
         <Table celled>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell>Name</Table.HeaderCell>
-              <Table.HeaderCell>Last name</Table.HeaderCell>
-              <Table.HeaderCell>City</Table.HeaderCell>
-              <Table.HeaderCell>Specialization</Table.HeaderCell>
-              <Table.HeaderCell>Manager</Table.HeaderCell>
-              <Table.HeaderCell>Service</Table.HeaderCell>
+              <Table.HeaderCell>Vardas</Table.HeaderCell>
+              <Table.HeaderCell>Pavardė</Table.HeaderCell>
+              <Table.HeaderCell>Miestas</Table.HeaderCell>
+              <Table.HeaderCell>Specializacija</Table.HeaderCell>
+              <Table.HeaderCell>Servisas</Table.HeaderCell>
               <Table.HeaderCell></Table.HeaderCell>
               <Table.HeaderCell></Table.HeaderCell>
             </Table.Row>

@@ -4,6 +4,7 @@ import {UserTable} from './UserTable';
 import {OrderTable} from './OrderTable';
 import {EditOrderTable} from './EditOrderTable';
 import { WorkersTable } from './WorkersTable';
+import { ServicesTable } from './ServicesTable';
 
 export function AdminTab(props) {
     const {handleInputChange} = props;
@@ -77,7 +78,6 @@ export function AdminTab(props) {
             render: () => (
               <Tab.Pane>
                 <WorkersTable
-
                 />
               </Tab.Pane>
             )
@@ -86,8 +86,7 @@ export function AdminTab(props) {
             menuItem: { key: 'services', icon: 'briefcase', content: 'Servisai' }, // Add the new menu item
             render: () => (
               <Tab.Pane>
-                <WorkersTable
-                  
+                <ServicesTable 
                 />
               </Tab.Pane>
             )
