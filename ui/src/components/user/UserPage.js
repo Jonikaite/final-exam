@@ -73,7 +73,6 @@ const [orderDescription,setOrderDescription] = useState('');
       // const { userMe, isLoading, orderDescription } = this.state
       return (
         <Container>
-          <p>UserPage.js</p>
           <OrderTable
             orders={userMe && userMe.orders}
             isLoading={isLoading}

@@ -3,7 +3,7 @@ import {Tab} from 'semantic-ui-react';
 import {UserTable} from './UserTable';
 import {OrderTable} from './OrderTable';
 import {EditOrderTable} from './EditOrderTable';
-// import {BackButton} from "../misc/BackButton";
+import { WorkersTable } from './WorkersTable';
 
 export function AdminTab(props) {
     const {handleInputChange} = props;
@@ -23,6 +23,7 @@ export function AdminTab(props) {
     } = props;
 
 
+    
     const panes = [
         {
             menuItem: {key: 'users', icon: 'users', content: 'Users'},
@@ -70,6 +71,27 @@ export function AdminTab(props) {
                 )
             )
         },
+
+        {
+            menuItem: { key: 'workers', icon: 'briefcase', content: 'Meistrai' }, // Add the new menu item
+            render: () => (
+              <Tab.Pane>
+                <WorkersTable
+
+                />
+              </Tab.Pane>
+            )
+          },
+          {
+            menuItem: { key: 'services', icon: 'briefcase', content: 'Servisai' }, // Add the new menu item
+            render: () => (
+              <Tab.Pane>
+                <WorkersTable
+                  
+                />
+              </Tab.Pane>
+            )
+          }
 
     ]
 

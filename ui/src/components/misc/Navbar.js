@@ -39,7 +39,7 @@ export function Navbar() {
         <Menu.Item as={Link} exact='true' to="/">Pagrindins</Menu.Item>
 
         <Menu.Item as={Link} to="/adminpage" style={adminPageStyle()}>Administratoriaus puslapis</Menu.Item>
-        <Menu.Item as={Link} to="/userpage" style={userPageStyle()}>UserPage</Menu.Item>
+        <Menu.Item as={Link} to="/userpage" style={userPageStyle()}>Vartotojo puslapis</Menu.Item>
         <Menu.Menu position='right'>
           <Menu.Item as={Link} to="/login" style={enterMenuStyle()}>Prisijungti</Menu.Item>
           <Menu.Item as={Link} to="/signup" style={enterMenuStyle()}>Užsiregistruoti</Menu.Item>
